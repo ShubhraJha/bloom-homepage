@@ -85,6 +85,20 @@ export const IntroVideo = ({ onEnter }: IntroVideoProps) => {
         </div>
       )}
 
+      {/* BACK BUTTON (visible while video is playing) */}
+      {hasStarted && (
+        <motion.button
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4 }}
+          onClick={handleEnterWebsite}
+          className="absolute bottom-6 left-6 z-40 w-10 h-10 rounded-full bg-gray-500/40 backdrop-blur-sm flex items-center justify-center text-white/80 hover:bg-gray-400/50 hover:scale-110 hover:text-white transition-all duration-200 cursor-pointer"
+          aria-label="Go back"
+        >
+          <ArrowLeft className="w-5 h-5" />
+        </motion.button>
+      )
+
       {/* 3. "VISIT WEBSITE" BUTTON (Appears when video ends) */}
       <AnimatePresence>
         {videoEnded && (
