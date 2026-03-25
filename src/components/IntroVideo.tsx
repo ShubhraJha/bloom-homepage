@@ -92,7 +92,7 @@ export const IntroVideo = ({ onEnter }: IntroVideoProps) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.4 }}
           onClick={handleEnterWebsite}
-          className="absolute bottom-6 left-6 z-40 w-10 h-10 rounded-full bg-gray-500/40 backdrop-blur-sm flex items-center justify-center text-white/80 hover:bg-gray-400/50 hover:scale-110 hover:text-white transition-all duration-200 cursor-pointer"
+          className="absolute bottom-6 left-6 z-40 w-12 h-12 rounded-full bg-white/25 backdrop-blur-md border border-white/40 flex items-center justify-center text-white hover:bg-white/40 hover:scale-110 transition-all duration-200 cursor-pointer shadow-lg"
           aria-label="Go back"
         >
           <ArrowLeft className="w-5 h-5" />
