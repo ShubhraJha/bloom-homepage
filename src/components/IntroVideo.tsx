@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, SkipForward, ArrowRight } from 'lucide-react';
+import { Play, SkipForward, ArrowRight, ArrowLeft } from 'lucide-react';
 import introVideo from '@/assets/intro.mp4'; 
 
 interface IntroVideoProps {
