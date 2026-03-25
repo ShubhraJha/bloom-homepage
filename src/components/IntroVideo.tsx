@@ -97,7 +97,7 @@ export const IntroVideo = ({ onEnter }: IntroVideoProps) => {
         >
           <ArrowLeft className="w-5 h-5" />
         </motion.button>
-      )
+      )}
 
       {/* 3. "VISIT WEBSITE" BUTTON (Appears when video ends) */}
       <AnimatePresence>
